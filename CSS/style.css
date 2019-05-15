@@ -1,0 +1,39 @@
+* {
+  box-sizing:border-box;
+}
+
+h1 {
+  font-size: 2em;
+  display:inline-block;
+  
+}
+
+.main-img {
+  width: 100%;
+  height: 250px; 
+  margin-bottom: -10px;
+}
+
+.main-header {
+  color: white;
+  background-color: #A0A0A0;
+  padding: 0 1.2em 1em 1.2em;
+  margin-top:-1px;
+  margin-bottom: 30px;
+}
+
+body {
+  
+  line-height: 1.6;
+}
+
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: #99FF99;
+}
+
+.Alex-p {
+  height: 100px;
+  width: 100px;
+}
