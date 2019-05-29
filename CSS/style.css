@@ -2,13 +2,16 @@
   box-sizing:border-box;
 }
 
-html {
-  display: flex;
-}
 h1 {
   font-size: 2em;
   display:inline-block;
-  
+}
+
+p {
+  background-color: #e8eeef;
+  /* color: #8a97a0; */
+  width: 120px;
+  margin: auto;
 }
 
 .main-img {
@@ -29,7 +32,7 @@ body {
   line-height: 1.6;
   flex-direction: column;
   margin: 0;
-  min-height: 100vh;
+  min-height: 100vh;  
 }
 
 .container,
@@ -47,6 +50,17 @@ span {
   margin-bottom: 10px;
 }
 
+a:hover {
+  color: orange;
+}
+
+a:active {
+  color: yellow;
+}
+
+a:visited {
+  color: green;
+}
 .Alex-p {
   height: 100px;
   width: 100px;
@@ -58,12 +72,8 @@ span {
   text-align: center;
   height: 50px;
   padding: 2em 0;
-  flex-shrink: 0;
 }
 
-/* .container {
-  flex: 1;
-} */
 
 /* ================================= 
   Media Queries
@@ -90,11 +100,11 @@ span {
 @media (min-width: 1025px) {
 
   .content{
-    flex: 1 0 auto;
-    /* margin: auto; */
-    max-height: 0px;
+    flex: 1 33%;
   }
 
-
+  .one, .two {
+    align-self: stretch;
+  }
 
 }
