@@ -15,18 +15,20 @@
      </head>
      <body>
        <header class= "main-header">
-        <img class= "main-img" src="Pictures/Main2.jpg" alt="Stardew Valley Logo">
+        <img class= "main-img" src="Pictures/Stardew Valley Logo.jpg" alt="Stardew Valley Logo">
        </header>
        
     <div class="intro">
         <h2>Game description</h2>
        <span> Stardew Valley is a farming simulator with a lot of fun mechanics.</span>
-    
-<!-- --  NEEDS JAVA SCRIPT TO WORK  -----
+      </div>
+<!-- --  NEEDS JAVA SCRIPT TO WORK  ----- -->
+<div class="container">
+  <div class="one content">
       <label for="Char-select">Choose a Character:</label>
       <select id="Char-select">
         <optgroup label="Bachelors">
-          <option value="1">Alex</option>
+          <option>Alex</option>
           <option>Elliott</option>
           <option>Harvey</option>
           <option>Sam</option>
@@ -64,61 +66,37 @@
           <option>Willy</option>
           <option>Wizard</option>
         </optgroup>
-        </select> -->
+        </select>
+
+        <button class="pick">Load character info</button>
 
          
-         <h2 class="listTitle">Choose a Character Below</h2>
-         <span>to learn all about the character</span>
-        </div>
-       <div class="container">
-        <div class="one content">
-            <ul><P><strong>Bachelors</strong></P>
-              <a href="Characters/Alex.html">
-                <p>Alex</p></a>
-                  <div class="box"><iframe src="Characters/Alex.html" width="300px" height="200px"></iframe></div>
-              <P><a href="">Elliott</a></P>
-              <P><a href="">Harvey</a></P>
-              <P><a href="">Sam</a></P>
-              <P><a href="">Sebastian</a></P>
-              <P><a href="">Shane</a></P>
-            </ul>
+         <!-- <h2 class="listTitle">Choose a Character Below</h2>
+         <span>to learn all about the character</span> -->
+        
+       
+            
           </div>
 
           <div class="two content">
-              <ul><p><strong>Bachelorettes</strong></p>
-                <P><a href="">Abigail</a></P>
-                <P><a href="">Emily</a></P>
-                <P><a href="">Haley</a></P>
-                <P><a href="">Leah</a></P>
-                <P><a href="">Maru</a></P>
-                <P><a href="">Penny</a></P>
-              </ul>
-            </div>
+              <label for="season">Choose a season to see what crops are avaiable:</label>
+              <select id="season">
+                <option>Spring</option>
+                <option>Summer</option>
+                <option>Fall</option>
+                <option>Winter</option>
+              </select>
 
             <div class="three content">
-                <ul><p><strong>Town Folks</strong></p>
-                  <P><a href="">Caroline</a></P>
-                  <P><a href="">Clint</a></P>
-                  <P><a href="">Demetrius</a></P>
-                  <P><a href="">Dward</a></P>
-                  <P><a href="">Evelyn</a></P>
-                  <P><a href="">George</a></P>
-                  <P><a href="">Gus</a></P>
-                  <P><a href="">Jas</a></P>
-                  <P><a href="">Jodi</a></P>
-                  <P><a href="">Kent</a></P>
-                  <P><a href="">Krobus</a></P>
-                  <P><a href="">Lewis</a></P>
-                  <P><a href="">Linus</a></P>
-                  <P><a href="">Marnie</a></P>
-                  <P><a href="">Pam</a></P>
-                  <P><a href="">Pierre</a></P>
-                  <P><a href="">Robin</a></P>
-                  <P><a href="">Sandy</a></P>
-                  <P><a href="">Vincent</a></P>
-                  <P><a href="">Willy</a></P>
-                  <P><a href="">Wizard</a></P>
-                </ul>
+                <label for="building">Choose a building to see what animals and upgrades there are:</label>
+                <select id="building">
+                  <option>Barn</option>
+                  <option>Coop</option>
+                  <option>Farm House</option>
+                  <option>Silo</option>
+                  <option>Well</option>
+                  <option>Mill</option>
+                </select>
               </div>
        </div>
 

@@ -12,11 +12,25 @@ p {
   /* color: #8a97a0; */
   width: 120px;
   margin: auto;
+  border-radius: 30px;
+  padding: 2px 0 ;
+  text-align: center;
+}
+
+.box{
+  display: none;
+  width: 100%;
+}
+
+a:hover + .box,.box:hover{
+  display: inline;
+  position: relative;
+  z-index: 100;
 }
 
 .main-img {
-  width: 100%;
-  height: 250px; 
+  width: 101%;
+  height: 300px; 
   margin-bottom: -10px;
 }
 
@@ -74,6 +88,11 @@ a:visited {
   padding: 2em 0;
 }
 
+.pick {
+  padding: auto;
+  margin-top: 20px;
+  margin-left: 50 px;
+}
 
 /* ================================= 
   Media Queries
@@ -91,9 +110,10 @@ a:visited {
   justify-content: space-around;
 }
 
-.three {
+/* .three {
   max-width: 300px;
-}
+} */
+/* Not Sure if I still need this style */
 
 }
 
@@ -103,7 +123,8 @@ a:visited {
     flex: 1 33%;
   }
 
-  .one, .two {
+  .one, .two,
+  .three {
     align-self: stretch;
   }
 
