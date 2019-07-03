@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 
 <html lang="en">
-   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="CSS/style.css?v1.0">
-    <link rel="stylesheet" href="CSS/normalize.css?v1.0">
- 
-     
-     <title>StarDew Valley</title>
-     <meta name="description" content="My First Website">
-     <meta name="author" content="CodeLouisville">
 
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     </head>
-     <body>
-       <header class= "main-header">
-        <img class= "main-img" src="Pictures/Stardew Valley Logo.jpg" alt="Stardew Valley Logo">
-       </header>
-       
-    <div class="intro">
-        <h2>Game description</h2>
-       <span> Stardew Valley is a farming simulator with a lot of fun mechanics.</span>
-      </div>
-<!-- --  NEEDS JAVA SCRIPT TO WORK  ----- -->
-<div class="container">
-  <div class="one content">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="CSS/style.css?v1.0">
+  <link rel="stylesheet" href="CSS/normalize.css?v1.0">
+
+
+  <title>StarDew Valley</title>
+  <meta name="description" content="My First Website">
+  <meta name="author" content="CodeLouisville">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header class="main-header">
+    <img class="main-img" src="Pictures/Stardew Valley Logo.jpg" alt="Stardew Valley Logo">
+  </header>
+
+  <div class="intro">
+    <h2>Game description</h2>
+    <span> Stardew Valley is a farming simulator with a lot of fun mechanics.</span>
+  </div>
+  <!-- --  NEEDS JAVA SCRIPT TO WORK  ----- -->
+  <div class="container">
+    <div class="one content">
       <label for="Char-select">Choose a Character:</label>
       <select id="Char-select">
-        <optgroup label="Bachelors">
-          <option>Alex</option>
-          <option>Elliott</option>
-          <option>Harvey</option>
-          <option>Sam</option>
-          <option>Sebastian</option>
-          <option>Shane</option>  
+        <optgroup label="Bachelors" id="CS-bachelors">
+          <option selected disabled hidden></option>
+          <option value="Characters/Alex.html">Alex</option>
+          <option value="1">Elliott</option>
+          <option value="2">Harvey</option>
+          <option value="3">Sam</option>
+          <option value="4">Sebastian</option>
+          <option value="5">Shane</option>
         </optgroup>
         <optgroup label="Bachelorettes">
           <option>Abigail</option>
@@ -66,44 +69,41 @@
           <option>Willy</option>
           <option>Wizard</option>
         </optgroup>
+      </select>
+
+      <button class="pick">Load character info</button>
+
+
+    </div>
+
+    <div class="two content">
+      <label for="season">Choose a season to see what crops are avaiable:</label>
+      <select id="season">
+        <option>Spring</option>
+        <option>Summer</option>
+        <option>Fall</option>
+        <option>Winter</option>
+      </select>
+    </div>
+      <div class="three content">
+        <label for="building">Choose a building to see what animals and upgrades there are:</label>
+        <select id="building">
+          <option>Barn</option>
+          <option>Coop</option>
+          <option>Farm House</option>
+          <option>Silo</option>
+          <option>Well</option>
+          <option>Mill</option>
         </select>
+      </div>
+    </div>
 
-        <button class="pick">Load character info</button>
+    <script src="java.js"></script>
+    <footer class="main-footer">
+      <span>&copy;2019 StarDoughtnut</span>
+    </footer>
 
-         
-         <!-- <h2 class="listTitle">Choose a Character Below</h2>
-         <span>to learn all about the character</span> -->
-        
-       
-            
-          </div>
 
-          <div class="two content">
-              <label for="season">Choose a season to see what crops are avaiable:</label>
-              <select id="season">
-                <option>Spring</option>
-                <option>Summer</option>
-                <option>Fall</option>
-                <option>Winter</option>
-              </select>
+</body>
 
-            <div class="three content">
-                <label for="building">Choose a building to see what animals and upgrades there are:</label>
-                <select id="building">
-                  <option>Barn</option>
-                  <option>Coop</option>
-                  <option>Farm House</option>
-                  <option>Silo</option>
-                  <option>Well</option>
-                  <option>Mill</option>
-                </select>
-              </div>
-       </div>
-
-       <script src="java.js"></script>
-       <footer class="main-footer">
-          <span>&copy;2019 StarDoughtnut</span>
-        </footer>
-
-  </body>
 </html>
