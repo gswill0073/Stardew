@@ -24,10 +24,11 @@
     <h2>Game description</h2>
     <span> Stardew Valley is a farming simulator with a lot of fun mechanics.</span>
   </div>
-  <!-- --  NEEDS JAVA SCRIPT TO WORK  ----- -->
+  
   <div class="container">
     <div class="one content">
       <label for="Char-select">Choose a Character:</label>
+      <br/>
       <select id="Char-select">
         <optgroup label="Bachelors" id="CS-bachelors">
           <option selected disabled hidden></option>
@@ -70,24 +71,32 @@
           <option>Wizard</option>
         </optgroup>
       </select>
+      
+      <button class="pick">Load Character Info</button>
 
-      <button class="pick">Load character info</button>
 
-
-    </div>
+    </div> <!-- end of one content-->
 
     <div class="two content">
       <label for="season">Choose a season to see what crops are avaiable:</label>
+      <br/>
       <select id="season">
+        <option selected disabled hidden></option>
         <option>Spring</option>
         <option>Summer</option>
         <option>Fall</option>
         <option>Winter</option>
       </select>
-    </div>
+
+      <button class="pick">Load Seasonal Crops</button>
+
+    </div> <!-- end of two content-->
+
       <div class="three content">
         <label for="building">Choose a building to see what animals and upgrades there are:</label>
+        <br/>
         <select id="building">
+          <option selected disabled hidden></option>
           <option>Barn</option>
           <option>Coop</option>
           <option>Farm House</option>
@@ -95,8 +104,11 @@
           <option>Well</option>
           <option>Mill</option>
         </select>
+
+        <button class="pick">Load Building Details</button>
+
       </div>
-    </div>
+    </div> <!-- end of three content-->
 
     <script src="java.js"></script>
     <footer class="main-footer">

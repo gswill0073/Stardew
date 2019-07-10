@@ -7,13 +7,12 @@ h1 {
   display:inline-block;
 }
 
-p {
+.content {
   background-color: #e8eeef;
-  /* color: #8a97a0; */
-  width: 120px;
-  margin: auto;
+  width: 180px;
+  margin: 5px auto;
   border-radius: 30px;
-  padding: 2px 0 ;
+  padding-bottom: 5px;
   text-align: center;
 }
 
@@ -82,11 +81,10 @@ a:visited {
 
 .main-footer {
   background: #d9e4ea;
-  position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
-  height: 50px;
+  height: 30px;
   padding: 2em 0;
 }
 
@@ -94,6 +92,8 @@ button {
   padding: auto;
   margin-top: 20px;
   margin-left: 50 px;
+  background-color: rgba(255, 255, 0, 0.473);
+  color: red;
 }
 
 /* ================================= 
@@ -102,32 +102,35 @@ button {
 
 @media (min-width: 769px) {
 
-.content {
-  flex: 1 50%;
-}
+  .content {
+    flex: 1 50%;
+  }
 
-.container {
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-}
+  .container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-/* .three {
-  max-width: 300px;
-} */
-/* Not Sure if I still need this style */
+  select {
+    margin: auto;
+    padding: auto;
+  }
 
+  .main-footer {
+      position: absolute;
+  }
 }
 
 @media (min-width: 1025px) {
 
-  .content{
-    flex: 1 33%;
-  }
+    .content {
+      flex: 1 33%;
+    }
 
-  .one, .two,
-  .three {
-    align-self: center;
-  }
+    .one, .two,
+    .three {
+      align-self: center;
+    }
 
 }

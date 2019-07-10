@@ -1,4 +1,4 @@
-//  Code for button  //
+//--  Code for button --//
 const selectButton = document.querySelector('.pick');
 
 
@@ -7,10 +7,7 @@ selectButton.addEventListener('click', function() {
     window.open(lookup);
 });
 
-
-
-
-// /code for button  //
+//-- /code for button  --//
 
 
 
