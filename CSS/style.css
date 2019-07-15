@@ -2,16 +2,27 @@
   box-sizing:border-box;
 }
 
+body {
+  display: flex;
+  line-height: 1.6;
+  flex-direction: column;
+  margin: 0;
+}
+
+.main-header {
+  align-content: center;
+  margin-top:-1px;
+  /* margin-bottom: 20px; */
+}
+
 h1 {
   font-size: 2em;
   display:inline-block;
 }
 
 .content {
-  background-color: #e8eeef;
   width: 180px;
-  margin: 5px auto;
-  border-radius: 30px;
+  margin: 10px auto;
   padding-bottom: 5px;
   text-align: center;
 }
@@ -27,32 +38,32 @@ a:hover + .box,.box:hover{
   z-index: 100;
 }
 
-.main-img {
-  width: 101%;
-  height: 300px; 
-  margin-bottom: -10px;
-}
-
-.main-header {
-  color: white;
-  padding: 0 1.2em 1em 1.2em;
-  margin-top:-1px;
-  margin-bottom: 30px;
-}
-
-body {
-  display: flex;
-  line-height: 1.6;
-  flex-direction: column;
-  margin: 0;
+.page_container {
   min-height: 100vh;  
+  position: relative;
 }
 
 .container,
 .intro{
   display: flex;
-  align-items: center;
   flex-direction: column;
+}
+
+.intro {
+  align-items: center;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.container {
+  padding-bottom: 2.5em;
+}
+
+.intro {
+  margin-top: -10px;
+  margin-bottom: 20px;
 }
 
 .listTitle {
@@ -61,39 +72,178 @@ body {
 
 span {
   margin-bottom: 10px;
-}
-
-a:hover {
-  color: orange;
-}
-
-a:active {
-  color: yellow;
-}
-
-a:visited {
-  color: green;
-}
-.Alex-p {
-  height: 100px;
-  width: 100px;
+  text-align: center;
 }
 
 .main-footer {
-  background: #d9e4ea;
+  position: absolute;
   bottom: 0;
   width: 100%;
-  text-align: center;
-  height: 30px;
-  padding: 2em 0;
+  height: 2.5em;
+  background: #d9e4ea;
+  text-align: center;  
 }
 
 button {
   padding: auto;
   margin-top: 20px;
   margin-left: 50 px;
-  background-color: rgba(255, 255, 0, 0.473);
-  color: red;
+  background-color: #fbf201;
+  color: #609ba8;
+  border: 1px solid;
+  box-shadow: 2.5px 5px;
+}
+
+caption {
+  size: 2em;
+  color: black;
+  margin-bottom: 10px;
+}
+
+span {
+  width: 95%
+}
+
+.character_temp,
+.crop_temp,
+.building_temp {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+/* ================================= 
+  Navbar Styles
+==================================== */
+
+#navbar {
+  overflow: hidden;
+  background-color: #277A3E;
+}
+
+#navbar a {
+  display: block;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  margin-top: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#navbar a:hover {
+  background-color: #FC952B;
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.301);
+}
+
+/* ================================= 
+  Picture Styles
+==================================== */
+
+.main-img {
+  width: 101%;
+  height: 300px; 
+  margin-bottom: -10px;
+}
+
+.Alex-p {
+  height: 100px;
+  width: 100px;
+  display: block;
+  float: left;
+}
+
+.crop-p {
+  width: 33%;
+  height: 300px;
+  float: left;
+}
+
+.crop-p2 {
+  width: 33%;
+  height: 300px;
+  float: right;
+}
+
+.build-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 300px;
+  background: url(../Pictures/buildings_pic/buildings_picture.png);
+  background-repeat: round;
+}
+
+.icon {
+  vertical-align: middle;
+  width: 33px;
+  height: 33px;
+  padding-right: 3px;
+}
+
+/* ================================= 
+  Form Styles
+==================================== */
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+.formClass {
+  display: inline-block;
+}
+
+/* ================================= 
+  Table Styles
+==================================== */
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+td, 
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #3eff8b;
+  color: white;
+}
+
+td:nth-child(1) {
+  background-color: #3eff8b;
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  color: #293f14;
+  text-align: center;
+  flex-direction: column;
 }
 
 /* ================================= 
@@ -117,20 +267,12 @@ button {
     padding: auto;
   }
 
-  .main-footer {
-      position: absolute;
-  }
 }
 
 @media (min-width: 1025px) {
 
     .content {
       flex: 1 33%;
-    }
-
-    .one, .two,
-    .three {
-      align-self: center;
     }
 
 }

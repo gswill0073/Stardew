@@ -16,85 +16,228 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <img class="main-img" src="Pictures/Stardew Valley Logo.jpg" alt="Stardew Valley Logo">
-  </header>
+  <div class="page_container">
+    <header class="main-header">
+      <img class="main-img" src="Pictures/Stardew Valley Logo.jpg" alt="Stardew Valley Logo">
+    </header>
 
-  <div class="intro">
-    <h2>Game description</h2>
-    <span> Stardew Valley is a farming simulator with a lot of fun mechanics.</span>
-  </div>
-  
-  <div class="container">
-    <div class="one content">
-      <label for="Char-select">Choose a Character:</label>
-      <br/>
-      <select id="Char-select">
-        <optgroup label="Bachelors" id="CS-bachelors">
+    <div id="navbar">
+      <a class="active" href="">Home</a>
+      <a href="buildings/building.html" target="_blank">Buildings</a>
+      <a href="crops/crops.html" target="_blank">Crops</a>
+    </div>
+
+    <div class="intro">
+      <h2>Game description</h2>
+      <span> Stardew Valley is a farming simulator with a lot of fun mechanics.</span>
+    </div>
+
+    <div class="container">
+      <div class="one content">
+        <label for="Char-select">Choose a Character:</label>
+        <br />
+        <select id="Char-select">
+          <optgroup label="Bachelors" id="CS-bachelors">
+            <option selected disabled hidden></option>
+            <option value="Characters/Alex.html">Alex</option>
+            <option value="1">Elliott</option>
+            <option value="2">Harvey</option>
+            <option value="3">Sam</option>
+            <option value="4">Sebastian</option>
+            <option value="5">Shane</option>
+          </optgroup>
+          <optgroup label="Bachelorettes">
+            <option>Abigail</option>
+            <option>Emily</option>
+            <option>Haley</option>
+            <option>Leah</option>
+            <option>Maru</option>
+            <option>Penny</option>
+          </optgroup>
+          <optgroup label="Town Folks">
+            <option>Caroline</option>
+            <option>Clint</option>
+            <option>Demetrius</option>
+            <option>Dward</option>
+            <option>Evelyn</option>
+            <option>George</option>
+            <option>Gus</option>
+            <option>Jas</option>
+            <option>Jodi</option>
+            <option>Kent</option>
+            <option>Krobus</option>
+            <option>Lewis</option>
+            <option>Linus</option>
+            <option>Marnie</option>
+            <option>Pam</option>
+            <option>Pierre</option>
+            <option>Robin</option>
+            <option>Sandy</option>
+            <option>Vincent</option>
+            <option>Willy</option>
+            <option>Wizard</option>
+          </optgroup>
+        </select>
+
+        <button class="pick">Load Character Info</button>
+        <div class="character_temp">
+          <div class="formClass">
+            <form action="Alex.html" method="POST">
+
+
+              <img class="Alex-p" src="Pictures/Alex.png" alt="Picture of Alex">
+              <h1 class="char-frame">Alex</h1>
+              <p>Birthday: Summer 13</p>
+
+              <fieldset>
+
+                <ul>
+                  <p>Loves</p>
+                  <li>Complete Breakfast</li>
+                  <li>Salmon Dinner</li>
+                </ul>
+
+                <ul>
+                  <p>Likes</p>
+                  <li>All Eggs (except Void Eggs)</li>
+                  <li>All Universal Likes</li>
+                </ul>
+
+                <ul>
+                  <p>Neutral</p>
+                  <li>All Universal Neutrals</li>
+                  <li>All Fruit (except Fruit tree fruit &#38 Salmonberry)</li>
+                  <li>All Milk</li>
+                </ul>
+
+                <ul>
+                  <p>Dislike</p>
+                  <li>All Universal Dislikes</li>
+                  <li>Salmonberry</li>
+                  <li>Wild Horseradish</li>
+                </ul>
+
+                <ul>
+                  <p>Hates</p>
+                  <li>All Universal Hates</li>
+                  <li>Holly</li>
+                  <li>Quartz</li>
+                </ul>
+
+              </fieldset>
+
+            </form>
+          </div>
+        </div> <!-- end of character temp-->
+      </div> <!-- end of one content-->
+
+      <div class="two content">
+        <label for="season">Choose a season to see what crops are avaiable:</label>
+        <br />
+        <select id="season">
           <option selected disabled hidden></option>
-          <option value="Characters/Alex.html">Alex</option>
-          <option value="1">Elliott</option>
-          <option value="2">Harvey</option>
-          <option value="3">Sam</option>
-          <option value="4">Sebastian</option>
-          <option value="5">Shane</option>
-        </optgroup>
-        <optgroup label="Bachelorettes">
-          <option>Abigail</option>
-          <option>Emily</option>
-          <option>Haley</option>
-          <option>Leah</option>
-          <option>Maru</option>
-          <option>Penny</option>
-        </optgroup>
-        <optgroup label="Town Folks">
-          <option>Caroline</option>
-          <option>Clint</option>
-          <option>Demetrius</option>
-          <option>Dward</option>
-          <option>Evelyn</option>
-          <option>George</option>
-          <option>Gus</option>
-          <option>Jas</option>
-          <option>Jodi</option>
-          <option>Kent</option>
-          <option>Krobus</option>
-          <option>Lewis</option>
-          <option>Linus</option>
-          <option>Marnie</option>
-          <option>Pam</option>
-          <option>Pierre</option>
-          <option>Robin</option>
-          <option>Sandy</option>
-          <option>Vincent</option>
-          <option>Willy</option>
-          <option>Wizard</option>
-        </optgroup>
-      </select>
-      
-      <button class="pick">Load Character Info</button>
+          <option>Spring</option>
+          <option>Summer</option>
+          <option>Fall</option>
+          <option>Winter</option>
+        </select>
 
+        <button class="pick">Load Seasonal Crops</button>
+        <div class="crop_temp">
+          <table>
+            <caption><strong>Summer Crops</strong></caption>
+            <tr>
+              <th>Seed</th>
+              <th>Growth</th>
+              <th>Continued Growth</th>
+              <th>Year Available</th>
+            </tr>
 
-    </div> <!-- end of one content-->
-
-    <div class="two content">
-      <label for="season">Choose a season to see what crops are avaiable:</label>
-      <br/>
-      <select id="season">
-        <option selected disabled hidden></option>
-        <option>Spring</option>
-        <option>Summer</option>
-        <option>Fall</option>
-        <option>Winter</option>
-      </select>
-
-      <button class="pick">Load Seasonal Crops</button>
-
-    </div> <!-- end of two content-->
+            <tr>
+              <td>Blueberry</td>
+              <td>13 Days</td>
+              <td>Every 4 Days</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td>Corn</td>
+              <td>14 Days</td>
+              <td>Every 4 Days</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td>Hops</td>
+              <td>11 Days</td>
+              <td>Every Day</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td>Hot Pepper</td>
+              <td>5 Days</td>
+              <td>Every 3 Days</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td>Melon</td>
+              <td>12 Days</td>
+              <td>No</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td>Poppy</td>
+              <td>7 Days</td>
+              <td>No</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td>Radish</td>
+              <td>6 Days</td>
+              <td>No</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td>Red Cabbage</td>
+              <td>9 Days</td>
+              <td>No</td>
+              <td>Year 2</td>
+            </tr>
+            <tr>
+              <td>Starfruit</td>
+              <td>13 Days</td>
+              <td>No</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td>Summer Spangle</td>
+              <td>8 Days</td>
+              <td>No</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td>Sunflower</td>
+              <td>8 Days</td>
+              <td>No</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td>Tomato</td>
+              <td>11 Days</td>
+              <td>Every 4 Days</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td>Wheat</td>
+              <td>4 Days</td>
+              <td>No</td>
+              <td>Year 1</td>
+            </tr>
+          </table>
+        </div> <!-- end of template-->
+      </div> <!-- end of two content-->
 
       <div class="three content">
         <label for="building">Choose a building to see what animals and upgrades there are:</label>
-        <br/>
+        <br />
         <select id="building">
           <option selected disabled hidden></option>
           <option>Barn</option>
@@ -107,14 +250,78 @@
 
         <button class="pick">Load Building Details</button>
 
-      </div>
-    </div> <!-- end of three content-->
+        <div class="building_temp">
+            <table>
+                <caption><strong>Barn</strong></caption>
+                <tr>
+                  <th>Name</th>
+                  <th>Upgrade From</th>
+                  <th>Cost</th>
+                  <th>Materials</th>
+                  <th>Capacity</th>
+                  <th>Animals</th>
+                  <th>Features</th>
+                </tr>
+        
+                <tr>
+                  <td><img src="Pictures/buildings_pic/barn.png" alt="Picture of a Barn"></br>Barn</td>
+                  <td>N/A</td>
+                  <td><img src="Pictures/buildings_pic/money.png" alt="Picture of money">6,000g</td>
+                  <td><img src="Pictures/buildings_pic/stone.png" alt="Picture of stone" class="icon">Stone (150) </br> <img
+                      src="Pictures/buildings_pic/wood.png" alt="Picture of Wood" class="icon">Wood (350)</td>
+                  <td>4</td>
+                  <td>Cow</td>
+                  <td>
+                    <ul>
+                      <li>Hopper</li>
+                      <li> Feeding Bench</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="Pictures/buildings_pic/big-barn.png" alt="Picture of a Big Barn"></br>Big Barn</td>
+                  <td>Barn</td>
+                  <td><img src="Pictures/buildings_pic/money.png" alt="Picture of money">12,000g</td>
+                  <td><img src="Pictures/buildings_pic/stone.png" alt="Picture of stone" class="icon">Stone (200) </br> <img
+                      src="Pictures/buildings_pic/wood.png" alt="Picture of Wood" class="icon">Wood (450)</td>
+                  <td>8</td>
+                  <td>Cow </br> Goat</td>
+                  <td>
+                    <ul>
+                      <li>Hopper</li>
+                      <li> Feeding Bench</li>
+                      <li> Enables Pregnancy</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="Pictures/buildings_pic/deluxe-barn.png" alt="Picture of a Deluxe Barn"></br>Deluxe Barn</td>
+                  <td>Big Barn</td>
+                  <td><img src="Pictures/buildings_pic/money.png" alt="Picture of money">25,000g</td>
+                  <td><img src="Pictures/buildings_pic/stone.png" alt="Picture of stone" class="icon">Stone (300) </br> <img
+                      src="Pictures/buildings_pic/wood.png" alt="Picture of Wood" class="icon">Wood (550)</td>
+                  <td>12</td>
+                  <td>Cow </br> Goat </br> Sheep </br> Pig</td>
+                  <td>
+                    <ul>
+                      <li>Hopper</li>
+                      <li> Feeding Bench</li>
+                      <li> Enables Pregnancy</li>
+                      <li> Autofeed System</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+        </div><!-- end of template-->
+      </div><!-- end of three content-->
+    </div>
 
     <script src="java.js"></script>
     <footer class="main-footer">
       <span>&copy;2019 StarDoughtnut</span>
     </footer>
 
+  </div>
 
 </body>
 
