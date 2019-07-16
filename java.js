@@ -1,18 +1,6 @@
-//--  Code for button --//
-const selectButton = document.querySelector('.pick');
-
-
-selectButton.addEventListener('click', function() {
-    var lookup = document.querySelector('#Char-select').value;
-    window.open(lookup);
-});
-
-//-- /code for button  --//
-
 //--  Code for Navbar --//
-window.onscroll = function() {scrollFunction()};
 
-var navbar = document.getElementById("navbar");
+var navbar = document.querySelector(".navbar");
 var sticky = navbar.offsetTop;
 
 function scrollFunction() {
@@ -22,18 +10,18 @@ function scrollFunction() {
         navbar.classList.remove("sticky");
     }
 }
+
+window.onscroll = function() {scrollFunction()};
 //--  /Code for Navbar --//
 
-//  adhoc code  //
+//--  Code for button --//
+const selectButton = document.querySelector('.pick');
 
-function update(previewPic) {
-    var src = previewPic.getAttribute("Characters/Alex.html");
-    var alt = previewPic.getAttribute("Preview of the Characters website");
-    document.getElementById('Alex').style.backgroundImage = URL(src);
-    document.getElementById('Alex').innerHTML = alt;
-}
+selectButton.addEventListener('click', function() {
+    var lookup = document.querySelector('#Char-select').value;
+    window.open(lookup);
+});
 
-function unDo() {
-    document.getElementById('Alex').style.backgroundImage = "none";
-    document.getElementById('Alex').innerHTML = "MouseOver Image to Display Here";
-}
+//-- /code for button  --//
+
+

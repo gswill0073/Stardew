@@ -9,19 +9,24 @@ body {
   margin: 0;
 }
 
+.background {
+  background: url(../Pictures/bg.png) fixed;
+  opacity: .2;
+}
+
 .main-header {
   align-content: center;
   margin-top:-1px;
-  /* margin-bottom: 20px; */
 }
 
 h1 {
   font-size: 2em;
   display:inline-block;
+  padding-left: 10px;
 }
 
 .content {
-  width: 180px;
+  width: 200px;
   margin: 10px auto;
   padding-bottom: 5px;
   text-align: center;
@@ -112,15 +117,26 @@ span {
 }
 
 /* ================================= 
+  Character Site Styles
+==================================== */
+
+.char-frame {
+  display: block;
+  margin-left: 3.125em;
+}
+
+
+
+/* ================================= 
   Navbar Styles
 ==================================== */
 
-#navbar {
+.navbar {
   overflow: hidden;
   background-color: #277A3E;
 }
 
-#navbar a {
+.navbar a {
   display: block;
   float: left;
   color: #f2f2f2;
@@ -136,7 +152,7 @@ span {
   width: 100%;
 }
 
-#navbar a:hover {
+.navbar a:hover {
   background-color: #FC952B;
 }
 
@@ -149,7 +165,7 @@ span {
 ==================================== */
 
 .main-img {
-  width: 101%;
+  width: 100%;
   height: 300px; 
   margin-bottom: -10px;
 }
@@ -220,12 +236,13 @@ table {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 50px;
+  table-layout: fixed; 
 }
 
 td, 
 th {
   border: 1px solid #dddddd;
-  text-align: left;
+  text-align: center;
   padding: 8px;
 }
 
@@ -244,6 +261,7 @@ td {
   color: #293f14;
   text-align: center;
   flex-direction: column;
+  padding-bottom: 1px;
 }
 
 /* ================================= 
@@ -269,7 +287,7 @@ td {
 
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1225px) {
 
     .content {
       flex: 1 33%;
