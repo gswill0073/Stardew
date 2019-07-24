@@ -1,3 +1,7 @@
+/* ================================= 
+  Main Style
+==================================== */
+
 * {
   box-sizing:border-box;
 }
@@ -129,6 +133,14 @@ select {
   height: 29.6px;
 }
 
+.hideBtn {
+  border: 0 solid;
+  background-color: white;
+  color: #FC952B;
+  margin-top: 10px;
+  box-shadow: 0 0;
+}
+
 /* ================================= 
   List Styles
 ==================================== */
@@ -189,7 +201,7 @@ li:hover {
   margin-bottom: -10px;
 }
 
-.Alex-p {
+.character-frame {
   height: 100px;
   width: 90px;
   display: block;

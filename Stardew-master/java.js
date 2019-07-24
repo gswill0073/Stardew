@@ -16,15 +16,10 @@ window.onscroll = function () { scrollFunction() };
 
 //--  Code for button --//
 
-const selectButton = document.querySelector('.pick');
-
-
-if (selectButton !== null) {
-    selectButton.addEventListener('click', function () {
-        var lookup = document.querySelector('#Char-select').value;
-        window.open(lookup);
-    });
-};
+function btnSelector (event) {
+    var lookup = document.querySelector(event).value;
+    window.open(lookup);
+}
 
 //-- /code for button  --//
 

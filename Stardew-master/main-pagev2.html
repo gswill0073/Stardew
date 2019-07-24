@@ -81,9 +81,9 @@
           </optgroup>
         </select>
 
-        <button class="pick">Load Character Info</button>
+        <button class="pick" onclick="btnSelector('#Char-select')">Load Character Info</button>
         <br/>
-        <button onclick="hideAndShow(charShow)">Click on this to see an example of the web page</button>
+        <button class="hideBtn" onclick="hideAndShow(charShow)">Click on this to see an example of the web page</button>
         <div class="character_temp" hidden>
           <div class="flexTable">
             <div class="char-frame">
@@ -143,14 +143,15 @@
         <br />
         <select id="season">
           <option selected disabled>Choose a season</option>
-          <option>Spring</option>
-          <option>Summer</option>
-          <option>Fall</option>
-          <option>Winter</option>
+          <option value="crops/crops.html#spring">Spring</option>
+          <option value="crops/crops.html#summer">Summer</option>
+          <option value="crops/crops.html#fall">Fall</option>
+          <option value="crops/crops.html#winter">Winter</option>
         </select>
 
-        <button class="pick">Load Seasonal Crops</button>
-        <button onclick="hideAndShow(cropShow)">Click on this to see an example of the web page</button>
+        <button class="pick" onclick="btnSelector('#season')">Load Seasonal Crops</button>
+        <br/>
+        <button class="hideBtn" onclick="hideAndShow(cropShow)">Click on this to see an example of the web page</button>
         <div class="crop_temp" hidden>
           <table id="summer">
             <caption><strong>Summer Crops</strong></caption>
@@ -249,19 +250,20 @@
         <br />
         <select id="building">
           <option selected disabled>Choose a building</option>
-          <option>Barn</option>
-          <option>Coop</option>
-          <option>Farm House</option>
-          <option>Mill </option>
-          <option>Shed</option>
-          <option>Silo</option>
-          <option>Slime Hutch</option>
-          <option>Stable</option>
-          <option>Well</option>
+          <option value="buildings/building.html#barn">Barn</option>
+          <option value="buildings/building.html#coop"> Coop</option>
+          <option value="buildings/building.html#farmHouse">Farm House</option>
+          <option value="buildings/building.html#mill">Mill </option>
+          <option value="buildings/building.html#shed">Shed</option>
+          <option value="buildings/building.html#silo">Silo</option>
+          <option value="buildings/building.html#slimeHutch">Slime Hutch</option>
+          <option value="buildings/building.html#stable">Stable</option>
+          <option value="buildings/building.html#well">Well</option>
         </select>
 
-        <button class="pick">Load Building Details</button>
-        <button onclick="hideAndShow(buildShow)">Click on this to see an example of the web page</button>
+        <button class="pick" onclick="btnSelector('#building')">Load Building Details</button>
+        <br/>
+        <button class="hideBtn" onclick="hideAndShow(buildShow)">Click on this to see an example of the web page</button>
         <div class="building_temp" hidden>
           <table>
             <caption><strong>Barn</strong></caption>
