@@ -65,7 +65,8 @@ a:hover + .box,.box:hover{
   padding-top: 60px;
 }
 
-.container {
+.container,
+.pre-foot {
   padding-bottom: 2.5em;
 }
 
@@ -201,7 +202,7 @@ li:hover {
   margin-bottom: -10px;
 }
 
-.character-frame {
+.character-p {
   height: 100px;
   width: 90px;
   display: block;
@@ -313,13 +314,12 @@ td {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-content: flex-start;
 }
 
 .char-frame {
   margin-top: 10px;
   margin-left: 3.125em;
-  flex-grow: 2;
-  align-self: flex-start;
   width: 100%;
 }
 
@@ -357,6 +357,7 @@ td {
 
   .flexTable {
     flex-direction: row;
+    align-self: flex-start;
   }
 }
 
