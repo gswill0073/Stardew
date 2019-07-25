@@ -1,9 +1,12 @@
+/* ================================= 
+  Main Style
+==================================== */
+
 * {
   box-sizing:border-box;
 }
 
 body {
-  display: flex;
   line-height: 1.6;
   flex-direction: column;
   margin: 0;
@@ -26,7 +29,7 @@ h1 {
 }
 
 .content {
-  width: 200px;
+  width: auto;
   margin: 10px auto;
   padding-bottom: 5px;
   text-align: center;
@@ -114,17 +117,45 @@ span {
 .building_temp {
   margin-top: 10px;
   padding-top: 10px;
+  margin-right: 10px;
+}
+
+h5 {
+  background-color: #3eff8b;
+  font-size: 1em;
+  text-align: center;
+  color: white;
+  width: 100px;
+}
+
+select {
+  width: 167.9px;
+  height: 29.6px;
+}
+
+.hideBtn {
+  border: 0 solid;
+  background-color: white;
+  color: #FC952B;
+  margin-top: 10px;
+  box-shadow: 0 0;
 }
 
 /* ================================= 
-  Character Site Styles
+  List Styles
 ==================================== */
 
-.char-frame {
-  display: block;
-  margin-left: 3.125em;
+ul {
+  list-style-type: square;
 }
 
+li {
+  padding-bottom: 5px;
+}
+
+li:hover {
+  background-color: #ddd;
+}
 
 
 /* ================================= 
@@ -170,11 +201,13 @@ span {
   margin-bottom: -10px;
 }
 
-.Alex-p {
+.character-frame {
   height: 100px;
-  width: 100px;
+  width: 90px;
   display: block;
   float: left;
+  box-shadow: 0 0 0 2px #E9D9AE inset;
+  border: 2px solid #853605;
 }
 
 .crop-p {
@@ -197,6 +230,17 @@ span {
   height: 300px;
   background: url(../Pictures/buildings_pic/buildings_picture.png);
   background-repeat: round;
+}
+
+.char-img {
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 300px;
+  background: url(../Pictures/characters_pic2.png) ;
+  /* background-repeat: round; */
+  /* background-size: contain; */
 }
 
 .icon {
@@ -236,7 +280,8 @@ table {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 50px;
-  table-layout: fixed; 
+  /* table-layout: inherit;  */
+  /* transform: rotate(90deg); */
 }
 
 td, 
@@ -264,6 +309,26 @@ td {
   padding-bottom: 1px;
 }
 
+.flexTable {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.char-frame {
+  margin-top: 10px;
+  margin-left: 3.125em;
+  flex-grow: 2;
+  align-self: flex-start;
+  width: 100%;
+}
+
+.gifts {
+  padding: 5px;
+  margin: 0;
+}
+
+
 /* ================================= 
   Media Queries
 ==================================== */
@@ -272,6 +337,11 @@ td {
 
   .content {
     flex: 1 50%;
+  }
+
+  .gifts {
+    flex: 1 33%;
+    justify-content: space-around;
   }
 
   .container {
@@ -285,6 +355,9 @@ td {
     padding: auto;
   }
 
+  .flexTable {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1225px) {
@@ -293,4 +366,7 @@ td {
       flex: 1 33%;
     }
 
+    .gifts {
+      flex: 1 20%;
+    }
 }

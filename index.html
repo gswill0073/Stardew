@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="CSS/style.css?v1.0">
+  <link rel="stylesheet" href="CSS/normalize.css?v1.0">
+
+
+  <title>StarDew Valley</title>
+  <meta name="description" content="My First Website">
+  <meta name="author" content="CodeLouisville">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- Body start -->
+
+<body>
+
+  <div class="page_container">
+    <!-- header start -->
+    <header class="main-header">
+      <img class="main-img" src="Pictures/Stardew Valley Logo.jpg" alt="Stardew Valley Logo">
+    </header>
+    <!-- header end -->
+    <div class="navbar">
+      <a class="active" href="">Home</a>
+      <a href="buildings/building.html" target="_blank">Buildings</a>
+      <a href="Characters/characterPage.html" target="_blank">Characters</a>
+      <a href="crops/crops.html" target="_blank">Crops</a>
+    </div>
+    <!-- intro start -->
+    <div class="intro">
+      <h2>Game description</h2>
+      <span> Stardew Valley is a farming simulator with a lot of fun mechanics.</span>
+    </div>
+    <!-- intro end -->
+    <div class="container">
+      <!-- main wrapper -->
+      <!-- first block of content -->
+      <div class="one content">
+        <label for="Char-select">Choose a Character:</label>
+        <br />
+        <select id="Char-select">
+          <optgroup label="Bachelors" id="CS-bachelors">
+            <option selected disabled>Choose a Character</option>
+            <option value="Characters/characterPage.html#alex">Alex</option>
+            <option value="Characters/characterPage.html#elliott">Elliott</option>
+            <option value="Characters/characterPage.html#harvey">Harvey</option>
+            <option value="Characters/characterPage.html#sam">Sam</option>
+            <option value="Characters/characterPage.html#sebastian">Sebastian</option>
+            <option value="Characters/characterPage.html#shane">Shane</option>
+          </optgroup>
+          <optgroup label="Bachelorettes">
+            <option value="Characters/characterPage.html#abigail">Abigail</option>
+            <option value="Characters/characterPage.html#emily">Emily</option>
+            <option value="Characters/characterPage.html#haley">Haley</option>
+            <option value="Characters/characterPage.html#leah">Leah</option>
+            <option value="Characters/characterPage.html#maru">Maru</option>
+            <option value="Characters/characterPage.html#penny">Penny</option>
+          </optgroup>
+          <optgroup label="Town Folks">
+            <option>Caroline</option>
+            <option>Clint</option>
+            <option>Demetrius</option>
+            <option>Dward</option>
+            <option>Evelyn</option>
+            <option>George</option>
+            <option>Gus</option>
+            <option>Jas</option>
+            <option>Jodi</option>
+            <option>Kent</option>
+            <option>Krobus</option>
+            <option>Lewis</option>
+            <option>Linus</option>
+            <option>Marnie</option>
+            <option>Pam</option>
+            <option>Pierre</option>
+            <option>Robin</option>
+            <option>Sandy</option>
+            <option>Vincent</option>
+            <option>Willy</option>
+            <option>Wizard</option>
+          </optgroup>
+        </select>
+
+        <button class="pick" onclick="btnSelector('#Char-select')">Load Character Info</button>
+        <br />
+        <button class="hideBtn" onclick="hideAndShow('.character_temp')">Click on this to see an example of the web
+          page</button>
+        <div class="character_temp" hidden>
+          <div class="flexTable">
+            <div class="char-frame">
+              <img class="Alex-p" id="alex" src="Pictures/character_pic/alex.png" alt="Picture of Alex"><strong>
+                <h1>Alex</h1>
+              </strong>
+              <br />
+              <h4>Birthday: Summer 13</h4>
+            </div>
+            <div class="gifts">
+              <h5>Loved</h5>
+              <ul>
+                <li>Complete Breakfast </li>
+                <li>Salmon Dinner</li>
+              </ul>
+            </div>
+            <div class="gifts">
+              <h5>Likes</h5>
+              <ul>
+                <li>All Eggs (except Void Eggs) </li>
+                <li> All Universal Likes</li>
+              </ul>
+            </div>
+            <div class="gifts">
+              <h5>Neutral</h5>
+              <ul>
+                <li>All Universal Neutrals</li>
+                <li>All Fruit (except Fruit tree fruit &#38; Salmonberry)</li>
+                <li>All Milk</li>
+              </ul>
+            </div>
+            <div class="gifts">
+              <h5>Dislikes</h5>
+              <ul>
+                <li>All Universal Dislikes</li>
+                <li>Salmonberry</li>
+                <li>Wild Horseradish</li>
+              </ul>
+            </div>
+            <div class="gifts">
+              <h5>Hates</h5>
+              <ul>
+                <li>All Universal Hates</li>
+                <li>Holly</li>
+                <li>Quartz</li>
+              </ul>
+
+
+            </div>
+          </div>
+          <!--end of flexTable-->
+        </div> <!-- end of character temp-->
+      </div> <!-- end of first block of content-->
+      <!-- Second block of content -->
+      <div class="two content">
+        <label for="season">Choose a season to see what crops are avaiable:</label>
+        <br />
+        <select id="season">
+          <option selected disabled>Choose a season</option>
+          <option value="crops/crops.html#spring">Spring</option>
+          <option value="crops/crops.html#summer">Summer</option>
+          <option value="crops/crops.html#fall">Fall</option>
+          <option value="crops/crops.html#winter">Winter</option>
+        </select>
+
+        <button class="pick" onclick="btnSelector('#season')">Load Seasonal Crops</button>
+        <br />
+        <button class="hideBtn" onclick="hideAndShow('.crop_temp')">Click on this to see an example of the web
+          page</button>
+        <div class="crop_temp" hidden>
+          <table id="summer">
+            <caption><strong>Summer Crops</strong></caption>
+            <tr>
+              <th>Seed</th>
+              <th>Growth</th>
+              <th>Continued Growth</th>
+              <th>Year Available</th>
+            </tr>
+
+            <tr>
+              <td><img src="Pictures/crops/blueberry.png" alt="Picture of a Blueberry"><br />Blueberry</td>
+              <td>13 Days</td>
+              <td>Every 4 Days</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td><img src="Pictures/crops/corn.png" alt="Picture of Corn"><br />Corn</td>
+              <td>14 Days</td>
+              <td>Every 4 Days</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td><img src="Pictures/crops/hops.png" alt="Picture of Hops"><br />Hops</td>
+              <td>11 Days</td>
+              <td>Every Day</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td><img src="Pictures/crops/hotpepper.png" alt="Picture of a Hot pepper"><br />Hot Pepper</td>
+              <td>5 Days</td>
+              <td>Every 3 Days</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td><img src="Pictures/crops/melon.png" alt="Picture of a Melon"><br />Melon</td>
+              <td>12 Days</td>
+              <td>No</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td><img src="Pictures/crops/poppy.png" alt="Picture of a Poppy"><br />Poppy</td>
+              <td>7 Days</td>
+              <td>No</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td><img src="Pictures/crops/radish.png" alt="Picture of a Radish"><br />Radish</td>
+              <td>6 Days</td>
+              <td>No</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td><img src="Pictures/crops/redCabbage.png" alt="Picture of a Red Cabbage"><br />Red Cabbage</td>
+              <td>9 Days</td>
+              <td>No</td>
+              <td>Year 2</td>
+            </tr>
+            <tr>
+              <td><img src="Pictures/crops/starFruit.png" alt="Picture of a StarFruit"><br />Starfruit</td>
+              <td>13 Days</td>
+              <td>No</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td><img src="Pictures/crops/summerSpangle.png" alt="Picture of a Summer Spangle"><br />Summer Spangle
+              </td>
+              <td>8 Days</td>
+              <td>No</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td><img src="Pictures/crops/sunFlower.png" alt="Picture of a Sun Flower"><br />Sunflower</td>
+              <td>8 Days</td>
+              <td>No</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td><img src="Pictures/crops/tomato.png" alt="Picture of a Tomato"><br />Tomato</td>
+              <td>11 Days</td>
+              <td>Every 4 Days</td>
+              <td>Year 1</td>
+            </tr>
+            <tr>
+              <td><img src="Pictures/crops/wheat.png" alt="Picture of Wheat"><br />Wheat</td>
+              <td>4 Days</td>
+              <td>No</td>
+              <td>Year 1</td>
+            </tr>
+          </table>
+        </div> <!-- end of template-->
+      </div> <!-- end of second block of content-->
+      <!-- Third block of content -->
+      <div class="three content">
+        <label for="building">Choose a building to see what animals and upgrades there are:</label>
+        <br />
+        <select id="building">
+          <option selected disabled>Choose a building</option>
+          <option value="buildings/building.html#barn">Barn</option>
+          <option value="buildings/building.html#coop"> Coop</option>
+          <option value="buildings/building.html#farmHouse">Farm House</option>
+          <option value="buildings/building.html#mill">Mill </option>
+          <option value="buildings/building.html#shed">Shed</option>
+          <option value="buildings/building.html#silo">Silo</option>
+          <option value="buildings/building.html#slimeHutch">Slime Hutch</option>
+          <option value="buildings/building.html#stable">Stable</option>
+          <option value="buildings/building.html#well">Well</option>
+        </select>
+
+        <button class="pick" onclick="btnSelector('#building')">Load Building Details</button>
+        <br />
+        <button class="hideBtn" onclick="hideAndShow('.building_temp')">Click on this to see an example of the web
+          page</button>
+        <div class="building_temp" hidden>
+          <table>
+            <caption><strong>Barn</strong></caption>
+            <tr>
+              <th>Name</th>
+              <th>Upgrade From</th>
+              <th>Cost</th>
+              <th>Materials</th>
+              <th>Capacity</th>
+              <th>Animals</th>
+              <th>Features</th>
+            </tr>
+
+            <tr>
+              <td><img src="Pictures/buildings_pic/barn.png" alt="Picture of a Barn"><br />Barn</td>
+              <td>N/A</td>
+              <td><img src="Pictures/buildings_pic/money.png" alt="Picture of money">6,000g</td>
+              <td><img src="Pictures/buildings_pic/stone.png" alt="Picture of stone" class="icon">Stone (150) <br />
+                <img src="Pictures/buildings_pic/wood.png" alt="Picture of Wood" class="icon">Wood (350)</td>
+              <td>4</td>
+              <td>Cow</td>
+              <td>
+                <ul>
+                  <li>Hopper</li>
+                  <li> Feeding Bench</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="Pictures/buildings_pic/big-barn.png" alt="Picture of a Big Barn"><br />Big Barn</td>
+              <td>Barn</td>
+              <td><img src="Pictures/buildings_pic/money.png" alt="Picture of money">12,000g</td>
+              <td><img src="Pictures/buildings_pic/stone.png" alt="Picture of stone" class="icon">Stone (200) <br />
+                <img src="Pictures/buildings_pic/wood.png" alt="Picture of Wood" class="icon">Wood (450)</td>
+              <td>8</td>
+              <td>Cow <br /> Goat</td>
+              <td>
+                <ul>
+                  <li>Hopper</li>
+                  <li> Feeding Bench</li>
+                  <li> Enables Pregnancy</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="Pictures/buildings_pic/deluxe-barn.png" alt="Picture of a Deluxe Barn"><br />Deluxe Barn
+              </td>
+              <td>Big Barn</td>
+              <td><img src="Pictures/buildings_pic/money.png" alt="Picture of money">25,000g</td>
+              <td><img src="Pictures/buildings_pic/stone.png" alt="Picture of stone" class="icon">Stone (300) <br />
+                <img src="Pictures/buildings_pic/wood.png" alt="Picture of Wood" class="icon">Wood (550)</td>
+              <td>12</td>
+              <td>Cow <br /> Goat <br /> Sheep <br /> Pig</td>
+              <td>
+                <ul>
+                  <li>Hopper</li>
+                  <li> Feeding Bench</li>
+                  <li> Enables Pregnancy</li>
+                  <li> Autofeed System</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div><!-- end of template-->
+      </div><!-- end of third block of content-->
+    </div> <!-- end of main wrapper -->
+    <script src="java.js"></script>
+    <footer class="main-footer">
+      <span>&copy;2019 StarDoughtnut</span>
+    </footer>
+
+
+  </div>
+  <!-- body end -->
+</body>
+
+</html>

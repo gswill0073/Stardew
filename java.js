@@ -4,24 +4,34 @@ var navbar = document.querySelector(".navbar");
 var sticky = navbar.offsetTop;
 
 function scrollFunction() {
-    if(window.pageYOffset >= sticky) {
+    if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
-    }else {
+    } else {
         navbar.classList.remove("sticky");
     }
 }
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 //--  /Code for Navbar --//
 
-//--  Code for button --//
-const selectButton = document.querySelector('.pick');
+//--  Code for buttons --//
 
-selectButton.addEventListener('click', function() {
-    var lookup = document.querySelector('#Char-select').value;
+function btnSelector (event) {
+    var lookup = document.querySelector(event).value;
     window.open(lookup);
-});
+}
 
-//-- /code for button  --//
+//-- /code for buttons  --//
 
+//-- hiding example page  --//
 
+function hideAndShow(event) {
+    var hideShow = document.querySelector(event);
+    if (hideShow.style.display === "none") {
+        hideShow.style.display = "block"
+    } else {
+        hideShow.style.display = "none";
+    }
+}
+
+//-- /hiding example page  --//
